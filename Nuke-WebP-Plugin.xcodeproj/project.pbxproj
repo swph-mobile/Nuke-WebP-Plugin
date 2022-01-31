@@ -1623,7 +1623,6 @@
 				F8BAAEBB200EDE100001110D /* Frameworks */,
 				F8BAAEBC200EDE100001110D /* Headers */,
 				F8BAAEBD200EDE100001110D /* Resources */,
-				F8FAA4D8200EF20B00DD0BED /* [Carthage] copy-framework */,
 			);
 			buildRules = (
 			);
@@ -1661,7 +1660,6 @@
 				F8E345112099337A002A0D95 /* Frameworks */,
 				F8E345132099337A002A0D95 /* Headers */,
 				F8E345422099337A002A0D95 /* Resources */,
-				F8E345432099337A002A0D95 /* [Carthage] copy-framework */,
 			);
 			buildRules = (
 			);
@@ -1865,22 +1863,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		F8E345432099337A002A0D95 /* [Carthage] copy-framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Nuke.framework",
-			);
-			name = "[Carthage] copy-framework";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
 		F8E3455820993551002A0D95 /* [carthage] copy framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1896,22 +1878,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		F8FAA4D8200EF20B00DD0BED /* [Carthage] copy-framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
-			);
-			name = "[Carthage] copy-framework";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		F8FAA4DA200EF4FA00DD0BED /* [carthage] copy framework */ = {
 			isa = PBXShellScriptBuildPhase;
