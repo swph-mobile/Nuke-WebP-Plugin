@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A8CC8FA27BD49B700B2F4BD /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FAA4D6200EF1FD00DD0BED /* Nuke.framework */; };
 		C7A377CC20334B7500339789 /* sample.gif in Resources */ = {isa = PBXBuildFile; fileRef = C74750E12030E2FC00FA7FE2 /* sample.gif */; };
 		F80A458120197DB600825C6D /* LoadWebPImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A458020197DB600825C6D /* LoadWebPImageTests.swift */; };
 		F80D73C0209FD9B10015EA10 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FAA69A200EF74D00DD0BED /* rescaler.c */; };
@@ -536,7 +537,6 @@
 		F8E345612099371C002A0D95 /* WebPDecodeTests_MacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E345602099371C002A0D95 /* WebPDecodeTests_MacOS.swift */; };
 		F8E345622099376B002A0D95 /* WebPDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A457E20197CE200825C6D /* WebPDecodeTests.swift */; };
 		F8FAA4D4200EF08400DD0BED /* sample.webp in Resources */ = {isa = PBXBuildFile; fileRef = F8FAA4D3200EF08400DD0BED /* sample.webp */; };
-		F8FAA4D7200EF1FD00DD0BED /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FAA4D6200EF1FD00DD0BED /* Nuke.framework */; };
 		F8FAA4D9200EF2FA00DD0BED /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FAA4D6200EF1FD00DD0BED /* Nuke.framework */; };
 		F8FAA652200EF70E00DD0BED /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FAA649200EF6ED00DD0BED /* demux.c */; };
 		F8FAA653200EF71200DD0BED /* anim_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FAA648200EF6ED00DD0BED /* anim_decode.c */; };
@@ -962,7 +962,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8FAA4D7200EF1FD00DD0BED /* Nuke.framework in Frameworks */,
+				3A8CC8FA27BD49B700B2F4BD /* Nuke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1618,7 +1618,6 @@
 				F8BAAEBB200EDE100001110D /* Frameworks */,
 				F8BAAEBC200EDE100001110D /* Headers */,
 				F8BAAEBD200EDE100001110D /* Resources */,
-				F8FAA4D8200EF20B00DD0BED /* [Carthage] copy-framework */,
 			);
 			buildRules = (
 			);
@@ -1891,22 +1890,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		F8FAA4D8200EF20B00DD0BED /* [Carthage] copy-framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
-			);
-			name = "[Carthage] copy-framework";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nuke.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		F8FAA4DA200EF4FA00DD0BED /* [carthage] copy framework */ = {
 			isa = PBXShellScriptBuildPhase;
